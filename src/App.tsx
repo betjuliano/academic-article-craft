@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Process from "./pages/Process";
 import WritingAssistant from "./pages/WritingAssistant";
 import NotFound from "./pages/NotFound";
+import APIKeysConfig from "./components/APIKeysConfig";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/process" element={<Process />} />
           <Route path="/assistente" element={<WritingAssistant />} />
+          <Route path="/config-api" element={<APIKeysConfig />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

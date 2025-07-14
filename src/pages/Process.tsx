@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Target, FileText, BarChart3, MessageSquare, CheckCircle, BookOpen, ArrowRight, ArrowLeft, Bot, Sparkles, Search } from "lucide-react";
+import { Target, FileText, BarChart3, MessageSquare, CheckCircle, BookOpen, ArrowRight, ArrowLeft, Bot, Sparkles, Search, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -62,10 +62,20 @@ const Process = () => {
       ],
       guidance: [
         "Seja específico e mensurável no objetivo",
-        "Justifique a relevância do estudo",
+        "Justifique a relevância do estudo", 
         "Contextualize dentro da área de conhecimento",
         "Identifique a lacuna que será preenchida"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     },
     introducao: {
       title: "Construa uma Introdução Estruturada",
@@ -84,7 +94,17 @@ const Process = () => {
         "Identifique lacunas ou problemas",
         "Declare claramente o objetivo do estudo",
         "Destaque a contribuição esperada"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     },
     metodologia: {
       title: "Detalhe a Metodologia do Estudo",
@@ -103,7 +123,17 @@ const Process = () => {
         "Detalhe instrumentos e procedimentos de coleta",
         "Descreva métodos de análise de dados",
         "Inclua aspectos éticos e limitações"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     },
     resultados: {
       title: "Apresente os Resultados",
@@ -122,7 +152,17 @@ const Process = () => {
         "Use tabelas e figuras quando apropriado",
         "Mantenha objetividade, sem interpretação",
         "Inclua análises estatísticas relevantes"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     },
     discussao: {
       title: "Interprete e Discuta os Resultados",
@@ -141,7 +181,17 @@ const Process = () => {
         "Discuta implicações teóricas e práticas",
         "Reconheça limitações do estudo",
         "Sugira direções para pesquisas futuras"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     },
     conclusao: {
       title: "Finalize com Conclusões Sólidas",
@@ -160,7 +210,17 @@ const Process = () => {
         "Destaque a contribuição para o conhecimento",
         "Indique implicações práticas",
         "Sugira pesquisas futuras"
-      ]
+      ],
+      instructions: `
+**INSTRUÇÕES PARA REDAÇÃO ACADÊMICA:**
+
+1. **Nunca altere o conteúdo do material recebido** - preserve a essência das ideias
+2. **Siga rigorosamente o padrão acadêmico APA 7ª edição**
+3. **Ajuste fluidez e elimine redundâncias** - torne o texto mais conciso
+4. **Mantenha tom neutro** - evite frases coloquiais ou sem validação acadêmica
+5. **Aproveite as referências recebidas** - use-as para sustentar argumentos
+6. **Solicite "Referência X"** quando necessário incluir citações adicionais
+7. **Para reduções**: diminua ~20% do texto sem perder contexto ou padrão`
     }
   };
 
@@ -496,7 +556,7 @@ const Process = () => {
               </div>
 
               {/* Guidance Section */}
-              <div className="bg-academic-blue-light rounded-lg p-6 mb-8">
+              <div className="bg-academic-blue-light rounded-lg p-6 mb-6">
                 <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-academic-blue" />
                   Orientações para esta Seção
@@ -511,16 +571,38 @@ const Process = () => {
                 </ul>
               </div>
 
+              {/* Academic Writing Instructions */}
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200 mb-8">
+                <h3 className="font-semibold text-purple-800 mb-3 flex items-center gap-2">
+                  <FileText className="w-5 h-5 text-purple-600" />
+                  Instruções de Redação Acadêmica
+                </h3>
+                <div className="text-sm text-purple-700 whitespace-pre-line">
+                  {currentStepData?.instructions}
+                </div>
+              </div>
+
               {/* Navigation Buttons */}
               <div className="flex justify-between pt-6 border-t">
-                <Button 
-                  variant="academicOutline" 
-                  onClick={handlePrevious}
-                  disabled={currentStep === steps[0].id}
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Anterior
-                </Button>
+                <div className="flex gap-3">
+                  <Button 
+                    variant="academicOutline" 
+                    onClick={handlePrevious}
+                    disabled={currentStep === steps[0].id}
+                  >
+                    <ArrowLeft className="w-4 h-4 mr-2" />
+                    Anterior
+                  </Button>
+                  
+                  <Button
+                    variant="outline"
+                    onClick={() => window.location.href = '/config-api'}
+                    className="text-academic-blue border-academic-blue hover:bg-academic-blue/10"
+                  >
+                    <Settings className="w-4 h-4 mr-2" />
+                    Configurar APIs
+                  </Button>
+                </div>
                 
                 <div className="flex gap-3">
                   <Button variant="outline">
