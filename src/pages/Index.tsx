@@ -76,6 +76,10 @@ const Index = () => {
                 <FileText className="w-5 h-5 mr-2" />
                 Iniciar Novo Artigo
               </Button>
+              <Button size="lg" variant="academicOutline" className="text-lg px-8 py-6" onClick={() => navigate("/assistente")}>
+                <MessageSquare className="w-5 h-5 mr-2" />
+                Assistente de Redação
+              </Button>
               <Button size="lg" variant="academicOutline" className="text-lg px-8 py-6" onClick={handleStartNewArticle}>
                 <BookOpen className="w-5 h-5 mr-2" />
                 Ver Demonstração
