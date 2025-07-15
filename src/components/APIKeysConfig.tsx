@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
+import AcademicHeader from "@/components/AcademicHeader";
 
 interface APIKey {
   id: string;
@@ -117,8 +118,10 @@ const APIKeysConfig = () => {
   });
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <Card className="shadow-[var(--shadow-card)]">
+    <div className="min-h-screen bg-gradient-to-br from-academic-blue-light via-card to-background">
+      <AcademicHeader />
+      <div className="max-w-4xl mx-auto p-6">
+        <Card className="shadow-[var(--shadow-card)]">
         <CardHeader className="bg-gradient-to-r from-academic-blue-light to-card border-b">
           <div className="flex items-center gap-4">
             <div className="p-3 bg-academic-blue text-white rounded-lg">
@@ -217,6 +220,7 @@ const APIKeysConfig = () => {
           </div>
         </CardContent>
       </Card>
+      </div>
     </div>
   );
 };
