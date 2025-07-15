@@ -1,4 +1,4 @@
-import { Target, FileText, BarChart3, MessageSquare, CheckCircle, BookOpen, Users, Lightbulb } from "lucide-react";
+import { Target, FileText, BarChart3, MessageSquare, CheckCircle, BookOpen, Users, Lightbulb, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import AcademicLayout from "@/components/AcademicLayout";
@@ -72,17 +72,17 @@ const Index = () => {
               garantindo qualidade e estrutura desde o primeiro rascunho até a submissão final.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" variant="academic" className="text-lg px-8 py-6" onClick={handleStartNewArticle}>
+              <Button size="lg" variant="academic" className="text-lg px-8 py-6" onClick={() => navigate("/auth")}>
+                <User className="w-5 h-5 mr-2" />
+                Entrar / Registrar-se
+              </Button>
+              <Button size="lg" variant="academicOutline" className="text-lg px-8 py-6" onClick={handleStartNewArticle}>
                 <FileText className="w-5 h-5 mr-2" />
                 Iniciar Novo Artigo
               </Button>
               <Button size="lg" variant="academicOutline" className="text-lg px-8 py-6" onClick={() => navigate("/assistente")}>
                 <MessageSquare className="w-5 h-5 mr-2" />
                 Assistente de Redação
-              </Button>
-              <Button size="lg" variant="academicOutline" className="text-lg px-8 py-6" onClick={handleStartNewArticle}>
-                <BookOpen className="w-5 h-5 mr-2" />
-                Ver Demonstração
               </Button>
             </div>
           </div>

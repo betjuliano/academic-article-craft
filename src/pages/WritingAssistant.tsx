@@ -86,7 +86,7 @@ const WritingAssistant = () => {
   };
 
   return (
-    <AcademicLayout>
+    <AcademicLayout showProcessButton={true}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="flex items-center gap-4 mb-6">
