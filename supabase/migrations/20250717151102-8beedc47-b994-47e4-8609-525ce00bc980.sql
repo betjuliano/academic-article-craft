@@ -1,0 +1,3 @@
+-- Enable Google Auth provider configuration
+-- This ensures the Google OAuth provider is properly configured
+-- No additional database changes needed for Google Auth
